@@ -1,0 +1,14 @@
+{
+  "name": "gymmo3",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "GymMo3 - 探しやすさ・休憩タイマー・コンディションの見やすさを作り直した筋トレ記録アプリ",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "serve": "python3 scripts/dev-server.py 5174"
+  },
+  "devDependencies": {
+    "wrangler": "^4.153.0"
+  }
+}

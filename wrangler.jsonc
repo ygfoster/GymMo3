@@ -1,0 +1,16 @@
+{
+  // GymMo3: 画面（web/）を配信し、/api は GymMo2 の Worker へ内部転送する（データは GymMo2 と共有）
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "gymmo3",
+  "main": "worker/src/index.js",
+  "compatibility_date": "2026-10-23",
+  "assets": {
+    "directory": "./web",
+    "binding": "ASSETS",
+    // API と App Links の確認ファイルだけ Worker が先に受け取り、ほかは静的ファイルをそのまま返す
+    "run_worker_first": ["/api", "/.well-known/*"]
+  },
+  // Service Binding: 公開ネットを経由せずに GymMo2 の Worker を呼ぶ。Google の秘密情報は GymMo2 側にだけある
+  "services": [{ "binding": "API", "service": "gymmo2" }],
+  "observability": { "enabled": true }
+}

@@ -1,0 +1,15 @@
+node_modules/
+.DS_Store
+.claude/
+.secrets/
+android/local.properties
+android/.gradle/
+android/build/
+android/app/build/
+android/.idea/
+*.apk
+*.aab
+.dev.vars
+.wrangler/
+.dev.vars
+.wrangler/
