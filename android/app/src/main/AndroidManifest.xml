@@ -18,7 +18,7 @@
         android:label="@string/app_name"
         android:supportsRtl="false"
         android:usesCleartextTraffic="false"
-        android:theme="@style/Theme.GymMo2">
+        android:theme="@style/Theme.GymMo3">
 
         <activity
             android:name=".MainActivity"
@@ -31,20 +31,13 @@
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-            <!-- ワンタップ接続リンク（https://gymmo2.gymmo2.workers.dev/#/connect?k=…）をアプリで開く。
-                 Worker が /.well-known/assetlinks.json で署名鍵の指紋を返すので、autoVerify で認証され、ブラウザではなくアプリで直接開く。
-                 旧住所（ygfoster.github.io/GymMo2、新しい住所への転送ページ）のリンクも引き続きアプリで受ける -->
+            <!-- ワンタップ接続リンク（https://gymmo3.gymmo2.workers.dev/#/connect?k=…）をアプリで開く。
+                 Worker が /.well-known/assetlinks.json で署名鍵の指紋を返すので、autoVerify で認証され、ブラウザではなくアプリで直接開く -->
             <intent-filter android:autoVerify="true">
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="https" android:host="gymmo2.gymmo2.workers.dev" />
-            </intent-filter>
-            <intent-filter android:autoVerify="true">
-                <action android:name="android.intent.action.VIEW" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="https" android:host="ygfoster.github.io" android:pathPrefix="/GymMo2" />
+                <data android:scheme="https" android:host="gymmo3.gymmo2.workers.dev" />
             </intent-filter>
         </activity>
 

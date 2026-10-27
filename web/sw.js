@@ -2,7 +2,7 @@
 // - アプリ本体: ネットワーク優先（常に最新）、オフラインや低速時はキャッシュから即起動
 // - フォント: stale-while-revalidate
 // - API（/api、Cloudflare Worker）: キャッシュしない（常に素通し）
-const VERSION = 'v1.0.0';
+const VERSION = 'v1.0.1';
 const SHELL_CACHE = `gymmo3-shell-${VERSION}`;
 const FONT_CACHE = 'gymmo3-fonts-v1';
 const NETWORK_TIMEOUT = 3500;

@@ -1,4 +1,4 @@
-package io.github.ygfoster.gymmo2;
+package io.github.ygfoster.gymmo3;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -12,7 +12,7 @@ import org.json.JSONObject;
  * 通知のボタンで状態が変わったときは「イベント」として溜めておき、Web 側が次に起きたときに取り込む。
  */
 final class TimerState {
-    private static final String PREFS = "gymmo2_timer";
+    private static final String PREFS = "gymmo3_timer";
     private static final String KEY_STATE = "state";
     private static final String KEY_EVENTS = "events";
     private static final int MAX_EVENTS = 20;

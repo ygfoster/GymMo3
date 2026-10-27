@@ -1,4 +1,4 @@
-package io.github.ygfoster.gymmo2;
+package io.github.ygfoster.gymmo3;
 
 import android.app.Activity;
 import android.content.ContentResolver;
@@ -97,7 +97,7 @@ final class NativeBridge {
     /** CSV などをダウンロードフォルダへ保存する（WebView は blob: のダウンロードに対応していないため） */
     @JavascriptInterface
     public void saveFile(String name, String mime, String text) {
-        String safeName = name == null ? "gymmo2.txt" : name.replaceAll("[\\\\/:*?\"<>|]", "_");
+        String safeName = name == null ? "gymmo3.txt" : name.replaceAll("[\\\\/:*?\"<>|]", "_");
         try {
             byte[] bytes = text.getBytes(StandardCharsets.UTF_8);
             ContentResolver r = app.getContentResolver();

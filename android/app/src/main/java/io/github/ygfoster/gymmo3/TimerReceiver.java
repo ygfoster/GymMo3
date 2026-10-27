@@ -1,4 +1,4 @@
-package io.github.ygfoster.gymmo2;
+package io.github.ygfoster.gymmo3;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

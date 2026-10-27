@@ -10,17 +10,17 @@ if (keystorePropsFile.exists()) {
 }
 
 android {
-    namespace 'io.github.ygfoster.gymmo2'
+    namespace 'io.github.ygfoster.gymmo3'
     compileSdk 36
 
     defaultConfig {
-        applicationId 'io.github.ygfoster.gymmo2'
+        applicationId 'io.github.ygfoster.gymmo3'
         minSdk 29
         targetSdk 36
-        versionCode 3
-        versionName '1.1.0'
+        versionCode 1
+        versionName '1.0.0'
         // Web アプリの公開 URL（アプリはここを読み込む。Web 側の更新はアプリの入れ直し不要）
-        buildConfigField 'String', 'START_URL', '"https://gymmo2.gymmo2.workers.dev/"'
+        buildConfigField 'String', 'START_URL', '"https://gymmo3.gymmo2.workers.dev/"'
     }
 
     buildFeatures {

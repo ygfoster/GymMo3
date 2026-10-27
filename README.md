@@ -26,6 +26,7 @@ npm run serve        # http://127.0.0.1:5174 （web/ だけを配信。?demo で
 npx wrangler dev     # http://127.0.0.1:8787 （画面 + /api。API は GymMo2 の公開 Worker へ転送）
 npm test             # ユニットテスト
 node scripts/offline-check.mjs   # Service Worker のオフライン起動を検証
+python3 scripts/make-icons.py    # Web と Android のアイコンを再生成（PIL が必要）
 npx wrangler deploy  # 本番へ公開
 ```
 

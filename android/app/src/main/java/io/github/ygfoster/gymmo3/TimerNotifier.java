@@ -1,4 +1,4 @@
-package io.github.ygfoster.gymmo2;
+package io.github.ygfoster.gymmo3;
 
 import android.app.AlarmManager;
 import android.app.Notification;
@@ -27,11 +27,11 @@ final class TimerNotifier {
     static final int ID_RUNNING = 1001;
     static final int ID_DONE = 1002;
 
-    static final String ACT_ALARM = "io.github.ygfoster.gymmo2.REST_ALARM";
-    static final String ACT_PAUSE = "io.github.ygfoster.gymmo2.REST_PAUSE";
-    static final String ACT_RESUME = "io.github.ygfoster.gymmo2.REST_RESUME";
-    static final String ACT_ADD30 = "io.github.ygfoster.gymmo2.REST_ADD30";
-    static final String ACT_RESET = "io.github.ygfoster.gymmo2.REST_RESET";
+    static final String ACT_ALARM = "io.github.ygfoster.gymmo3.REST_ALARM";
+    static final String ACT_PAUSE = "io.github.ygfoster.gymmo3.REST_PAUSE";
+    static final String ACT_RESUME = "io.github.ygfoster.gymmo3.REST_RESUME";
+    static final String ACT_ADD30 = "io.github.ygfoster.gymmo3.REST_ADD30";
+    static final String ACT_RESET = "io.github.ygfoster.gymmo3.REST_RESET";
 
     private TimerNotifier() {}
 

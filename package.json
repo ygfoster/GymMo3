@@ -1,6 +1,6 @@
 {
   "name": "gymmo3",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "type": "module",
   "description": "GymMo3 - 探しやすさ・休憩タイマー・コンディションの見やすさを作り直した筋トレ記録アプリ",
